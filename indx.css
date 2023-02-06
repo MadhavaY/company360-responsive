@@ -99,6 +99,9 @@ body {
     margin: auto;
 }
 
+.footer{
+    display: none;
+}
 
 
 @media only screen and (max-width:600px){
@@ -122,6 +125,7 @@ body {
    } */
 
    .footer{
+    display: inline-block;
     background-color:rgb(255, 191, 0);
     position: absolute;
     bottom: 0;
