@@ -97,5 +97,17 @@ body {
     /* margin-top: 7rem; */
     display: flex;
     margin: auto;
+}
+
+
+
+@media only screen and (max-width:600px){
+    .private{
+        width:fit-content;
+        box-sizing: border-box;
+        /* height: ; */
+    }
+
+
 
 }
