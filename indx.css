@@ -116,9 +116,13 @@ body {
     left: 0;
     /* align-items: center; */
     display: inline;
-    height: 3rem;
+    height: 1rem;
     max-width: 100%;
     width: 27rem;
+   }
+
+   .new-tag{
+    left: -4rem;
    }
 
 
