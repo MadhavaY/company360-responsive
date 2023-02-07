@@ -134,11 +134,11 @@ body {
     display: block;
 } */
 
-
+/* 
     .container {
         position: relative;
         margin: auto;
-    }
+    } */
 
     .slide {
         display: none;
@@ -172,7 +172,8 @@ body {
     .limited,
     .one-person,
     .patnership {
-        height: auto;
+        /* height: auto; */
+        width: fit-content;
     }
 
     .private {
@@ -188,19 +189,20 @@ body {
         position: absolute;
         bottom: 0;
         left: 0;
-        display: inline-block;
-        height: 2rem;
+        height: 1rem;
         max-width: 100%;
         width: 27rem;
     }
 
-
-
-
-
     .new-tag {
         left: -4rem;
     }
+
+    /* .hyper-link{
+        display: flex;
+        margin: auto;
+        text-align: center;
+    } */
 
 
 }
