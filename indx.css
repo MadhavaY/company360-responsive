@@ -21,7 +21,10 @@ body {
 }
 
 
-.private, .limited, .one-person, .patnership {
+.private,
+.limited,
+.one-person,
+.patnership {
 
     display: flex;
     flex-direction: column;
@@ -33,7 +36,10 @@ body {
     padding: 1.5rem;
 }
 
-.private h2,.limited h2, .one-person h2, .patnership h2 {
+.private h2,
+.limited h2,
+.one-person h2,
+.patnership h2 {
     padding: 1rem;
     text-align: center;
 }
@@ -43,7 +49,10 @@ body {
     padding: 1.5rem;
 } */
 
-.private h2::after, .limited h2::after, .one-person h2::after, .patnership h2::after {
+.private h2::after,
+.limited h2::after,
+.one-person h2::after,
+.patnership h2::after {
     content: "";
     display: inline-block;
     width: 13rem;
@@ -67,11 +76,11 @@ body {
     font-size: 5rem;
 }
 
-.pricing span{
+.pricing span {
     font-size: 0.7rem;
 }
 
-.new-tag{
+.new-tag {
     rotate: -45deg;
     background-color: rgb(255, 191, 0);
     text-align: center;
@@ -82,12 +91,18 @@ body {
     /* height: 1rem; */
 }
 
-.private a,.limited a, .one-person a, .patnership a {
+.private a,
+.limited a,
+.one-person a,
+.patnership a {
     text-decoration: none;
     color: blue;
 }
 
-.private p,.limited p, .one-person p, .patnership p {
+.private p,
+.limited p,
+.one-person p,
+.patnership p {
     padding: 0.5rem;
     margin-top: 1rem;
     /* line-height: 1.5rem; */
@@ -100,15 +115,15 @@ body {
     margin: auto;
 }
 
-.footer{
+.footer {
     display: none;
 }
 
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:600px) {
 
-    
-.container div{
+
+    /* .container div{
     display: none;
     position: absolute;
     top: 0;
@@ -117,51 +132,75 @@ body {
 
 .container div:first-child{
     display: block;
-}
+} */
 
-    .private, .limited, .one-person, .patnership{
+
+    .container {
+        position: relative;
+        margin: auto;
+    }
+
+    .slide {
+        display: none;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #676767;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+
+    }
+
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+
+    .fade{
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    .private,
+    .limited,
+    .one-person,
+    .patnership {
         height: auto;
     }
 
-    .private{
-        width:fit-content;
+    .private {
+        width: fit-content;
         box-sizing: border-box;
         /* height: ; */
     }
 
 
-   .footer{
-    display: inline-block;
-    background-color:rgb(255, 191, 0);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: inline-block;
-    height: 3rem;
-    max-width: 100%;
-    width: 27rem;
-   }
+    .footer {
+        display: inline-block;
+        background-color: rgb(255, 191, 0);
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: inline-block;
+        height: 2rem;
+        max-width: 100%;
+        width: 27rem;
+    }
 
-   .dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #676767;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-   
-  }
-  
-  .active, .dot:hover {
-    background-color: #717171;
-  }
-  
 
-   .new-tag{
-    left: -4rem;
-   }
+
+
+
+    .new-tag {
+        left: -4rem;
+    }
 
 
 }
