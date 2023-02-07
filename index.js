@@ -18,7 +18,6 @@
 // })
 
 
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
   let slideIndex = 0;
   showSlides();
 
@@ -36,5 +35,5 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
     setTimeout(showSlides, 2000);
   }
 
-}
+
 
