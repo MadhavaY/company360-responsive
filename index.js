@@ -1,23 +1,5 @@
 
 
-
-// function div(){
-//   var div = $('.container'),
-//       now = div.filter(':visible'),
-//       next = now.next().length ? now.next() : div.first(),
-//       speed = 1000;
-// console.log(div);
-
-//   now.fadeOut(speed);
-//   now.fadeIn(speed);
-// }
-
-
-// $(function(){
-//   setInterval(div,1400);
-// })
-
-
   let slideIndex = 0;
   showSlides();
 
